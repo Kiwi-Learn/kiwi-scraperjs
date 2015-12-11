@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - "5.2.0"
   - "4.2.3"
-script: npm test spec
+script: npm test
 branches:
   only:
     - master

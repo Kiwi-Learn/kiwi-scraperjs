@@ -1,5 +1,7 @@
 # kiwi-scraperjs
 
+[![Build Status](https://travis-ci.org/Kiwi-Learn/kiwi-scraperjs.svg?branch=add-badge)](https://travis-ci.org/Kiwi-Learn/kiwi-scraperjs)
+
 This is `Node.js` implementation for [kiwi-scraper](https://github.com/Kiwi-Learn/kiwi-scraper)
 
 # Installation
