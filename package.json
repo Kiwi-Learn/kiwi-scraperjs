@@ -1,6 +1,6 @@
 {
   "name": "kiwi-scraperjs",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "",
   "main": "index.js",
   "directories": {
@@ -12,9 +12,12 @@
     "got": "^5.2.0",
     "lodash": "^3.10.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^8.0.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha"
   },
   "keywords": [
     "sharecourse"

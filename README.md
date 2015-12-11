@@ -12,19 +12,28 @@ npm install kiwi-scraperjs
 
 ```javascript
 'use strict';
-let KiwiScraper = require('kiwi-scraperjs');
+let KiwiScraper = require('../index.js');
 
 let ks = new KiwiScraper();
 
-// Get Courses list
-ks.getCourses((err, res) => {console.log(res);});
+// Show all courses list
+ks.listCourses((err, courses) => {
+  console.log(courses);
+});
 
-// fuzzy search Object return object
-console.log(ks.searchCourseName('program'));
+// Fuzzy search for courses object. return courses objects
+ks.searchCourse('program', (err, res) => {
+  console.log(res);
+});
 
-// Courses ID to Courses Object return object
-console.log(ks.coursesIDtoObject);
+// Courses ID to courses name. return a course name
+ks.getCourseNameByID('EE62002', (err, res) => {
+  console.log(res);
+});
 
-// Get Course Name by Course ID return string
-console.log(ks.getCourseNameByID('EE62002'));
+// Courses ID to courses object. return a course object
+ks.getCourseObjectByID('EE62002', (err, res) => {
+  console.log(res);
+});
+
 ```
