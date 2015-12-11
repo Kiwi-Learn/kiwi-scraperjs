@@ -3,7 +3,7 @@ let KiwiScraper = require('../index.js');
 let should = require('should');
 
 describe('KiwiScraper', function() {
-  this.timeout(30000);
+  this.timeout(90000);
 
   describe('#listCourses()', () => {
     it('should list courses without error', (done) => {
