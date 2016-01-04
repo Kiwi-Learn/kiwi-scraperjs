@@ -5,6 +5,31 @@ let should = require('should');
 describe('KiwiScraper', function() {
   this.timeout(90000);
 
+  describe('Force update', () => {
+    it('should fetch new html file', (done) => {
+      let opts = {
+        forceUpdate: true,
+      };
+      let ks = new KiwiScraper(opts);
+      ks.listCourses((err, courses) => {
+        if (err) throw err;
+        done();
+      });
+    });
+
+    it('should not fetch new html file', (done) => {
+      let opts = {
+        forceUpdate: false,
+      };
+      let ks = new KiwiScraper(opts);
+      ks.listCourses((err, courses) => {
+        if (err) throw err;
+        done();
+      });
+    });
+
+  });
+
   describe('#listCourses()', () => {
     it('should list courses without error', (done) => {
       let ks = new KiwiScraper();

@@ -1,7 +1,11 @@
 'use strict';
 let KiwiScraper = require('../index.js');
 
-let ks = new KiwiScraper();
+let opts = {
+  forceUpdate: true,
+};
+
+let ks = new KiwiScraper(opts);
 
 // Show all courses list
 ks.listCourses((err, courses) => {
