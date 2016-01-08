@@ -3,7 +3,7 @@ let KiwiScraper = require('../index.js');
 let should = require('should');
 
 describe('KiwiScraper', function() {
-  this.timeout(90000);
+  this.timeout(1000000);
 
   describe('Force update', () => {
     it('should fetch new html file', (done) => {
