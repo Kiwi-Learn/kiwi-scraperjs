@@ -1,8 +1,8 @@
 sudo: false
 language: node_js
 node_js:
-  - "5.2.0"
-  - "4.2.3"
+  - "5.4.0"
+  - "4.2.4"
 script: npm test
 branches:
   only:
