@@ -42,6 +42,7 @@ describe('KiwiScraper', function() {
           course.should.have.property('name');
           course.should.have.property('fees');
           course.should.have.property('url');
+          course.should.have.property('institution');
         }
 
         done();
@@ -61,6 +62,7 @@ describe('KiwiScraper', function() {
           course.should.have.property('name');
           course.should.have.property('fees');
           course.should.have.property('url');
+          course.should.have.property('institution');
         }
 
         done();
@@ -91,6 +93,7 @@ describe('KiwiScraper', function() {
         course.should.have.property('name');
         course.should.have.property('fees');
         course.should.have.property('url');
+        course.should.have.property('institution');
         done();
       });
     });
